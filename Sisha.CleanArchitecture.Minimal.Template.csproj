@@ -7,7 +7,6 @@
     <Version>1.0.0</Version>
 
     <Authors>Sisha.ir</Authors>
-    <Company>Sisha.ir</Company>
 
     <PackageType>Template</PackageType>
 
@@ -16,7 +15,7 @@
 
     <PackageTags>dotnet;template;clean-architecture;aspnetcore</PackageTags>
 
-    <RepositoryUrl>https://github.com/YOUR_GITHUB/Sisha.CleanArchitecture.Minimal</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Mansarix/sisha_minimal_clean_architecture</RepositoryUrl>
 
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
@@ -25,11 +24,15 @@
 
     <ContentTargetFolders>content</ContentTargetFolders>
 
-    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoBuild>true</NoBuild>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="**\*" Exclude="bin\**;obj\**;.git\**" />
+    <Content Include="**\*" Exclude="bin\**;obj\**;.git\**;.vs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 
 </Project>
