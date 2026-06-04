@@ -15,4 +15,5 @@ A minimal and clean ASP.NET Core Clean Architecture boilerplate.
 
 ---
 
-## 📦 Project Structure
+## 📦 How to use:
+dotnet new clean-arch -n MyProjectName
