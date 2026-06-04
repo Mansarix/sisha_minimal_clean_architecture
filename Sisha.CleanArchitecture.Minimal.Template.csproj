@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+
+    <PackageId>Sisha.CleanArchitecture.Minimal</PackageId>
+    <Version>1.0.0</Version>
+
+    <Authors>Sisha.ir</Authors>
+    <Company>Sisha.ir</Company>
+
+    <PackageType>Template</PackageType>
+
+    <Title>Sisha Clean Architecture Minimal Template</Title>
+    <Description>Minimal ASP.NET Core Clean Architecture solution template.</Description>
+
+    <PackageTags>dotnet;template;clean-architecture;aspnetcore</PackageTags>
+
+    <RepositoryUrl>https://github.com/YOUR_GITHUB/Sisha.CleanArchitecture.Minimal</RepositoryUrl>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+
+    <ContentTargetFolders>content</ContentTargetFolders>
+
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**\*" Exclude="bin\**;obj\**;.git\**" />
+  </ItemGroup>
+
+</Project>
