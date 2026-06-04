@@ -1,19 +1,51 @@
 # Sisha Clean Architecture (Minimal)
 
-A minimal and clean ASP.NET Core Clean Architecture boilerplate.
+Minimal and production-ready ASP.NET Core Clean Architecture solution template.
+
+> A clean starting point for building scalable, maintainable, layered .NET applications.
+
+---
 
 ## ✨ Features
 
 - Clean Architecture structure
-- Domain layer with BaseEntity and ValueObject
-- Application layer
-- Infrastructure layer
-- ASP.NET Core MVC presentation layer
+- Domain-driven design friendly
+- BaseEntity & ValueObject included
+- ASP.NET Core MVC
 - Dependency Injection ready
 - Nullable enabled
-- Minimal and production-ready foundation
+- Lightweight & extensible
+- Ready for NuGet template usage
 
 ---
 
-## 📦 How to use:
-dotnet new clean-arch -n MyProjectName
+## 🧱 Project Structure
+
+    src/
+     ├── ProjectName.Domain
+     │    ├── Entities
+     │    ├── ValueObjects
+     │    └── Interfaces
+     │
+     ├── ProjectName.Application
+     │    ├── Interfaces
+     │    ├── Services
+     │    └── DTOs
+     │
+     ├── ProjectName.Infrastructure
+     │    ├── Persistence
+     │    ├── Repositories
+     │    └── Services
+     │
+     └── ProjectName.Web
+          ├── Controllers
+          ├── Views
+          └── Models
+
+---
+
+## 🚀 Install as .NET Template
+
+Install globally from NuGet:
+```bash
+dotnet new install Sisha.CleanArchitecture.Minimal
